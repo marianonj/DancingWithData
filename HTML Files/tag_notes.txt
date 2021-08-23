@@ -1,0 +1,25 @@
+<a> - defines a hyperlink
+<a href> - Specifies the url of the page that the link goes to
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+
+<img> - embeds an image in an html page - Two Types
+    <img src = 'directory' width = 'x' height = 'y' alt = 'text describing image if image is unable to load'
+    <src>
+        Absolute - Links to an external image that is hosted on another website
+            <img src = 'https://www.w3schools.com/images/img_girl.jpg'>
+        Relative - Links to an image that is hosted within the website, does not contain the domain
+            If starting without a / - references current page
+            <img src="img_girl.jpg" width="500" height="600">
+            If starting with / - references domain
+            <img src = 'https://www.w3schools.com/images/img_girl.jpg'>
+    <alt>
+        Provides image text
+    <width> & <height>
+        Sizes image to the shape specified
+
+<h> - Headings, search engines use heading to index and structure content of your web pages
+    <h1 - h6> <h1 most important> <h6 least important>
+    Each heading has default size, size can be specified with style attribute
+    <h1 style = 'font-size:60px;'>
+
+
