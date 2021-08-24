@@ -1,0 +1,50 @@
+body {
+    background-color: hsl(0, 0%, 0%);
+    padding:0px;
+    margin:0px;
+    }
+.title_div {
+    background-color: hsl(0, 0%, 0%);
+    position:relative;
+    color: white;
+    text-align: center;
+    padding:0px;
+    top:0px;
+    width:100%;
+    }
+.top_nav {
+    background-color: hsl(0, 0%, 5%);
+    position:relative;
+    height:auto;
+    min-width:100%;
+    color: white;
+    text-align: left;
+    font-size: 25px;
+    text-decoration:none
+    display:block;
+    }
+.button_link {
+    vertical-align:middle;
+    overflow:hidden;
+    height:inherit;
+    color: inherit;
+    align: center;
+    background-color: inherit;
+    cursor: pointer;
+    padding-right: 1%;
+    text-decoration:none;
+    }
+.top_nav a.button_link:hover {
+    color : rgb(255, 255, 204);
+    }
+h1 {
+    font-size:3vw;
+    margin:0px;
+    padding:0px;
+    }
+h2 {
+    font-size:2vw;
+    margin:0px;
+    padding:0px;
+    }
+
