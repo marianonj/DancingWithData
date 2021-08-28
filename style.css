@@ -8,7 +8,7 @@ body {
     box-sizing:border-box;
     margin:0;
     padding:0;
-    background-color: hsl(0, 0%, 5%);
+    background-color: hsl(0, 0%, 0%);
 }
 
 li, a, button {
@@ -23,6 +23,8 @@ header {
     justify-content: flex-start;
     align-items: left;
     padding: 30px, 10%;
+    background-color: hsl(0, 0%, 5%);
+
 }
 
 .button_link {
@@ -39,4 +41,3 @@ header {
 .top_nav a.button_link:hover {
     color : rgb(255, 255, 204);
     background-color : rgb(0, 0, 0);
-    
