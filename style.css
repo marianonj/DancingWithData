@@ -27,15 +27,9 @@ li, a, button {
     padding: 30px, 10%;
     background-color: rgb(13, 13, 13);
     z-index: -1;
-    }
 }
 
 
-@media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
-  }
 
 .navbar div:last-child {
     margin-left: auto;
