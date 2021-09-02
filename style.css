@@ -11,14 +11,13 @@
   section {
     background:hsl(0, 0%, 0%);
     height: calc(100vh - 40px);
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
   #main-nav a {
-    position:fixed;
-    top:0;
     font-family:  'Calibri';
     color: #f6f7f8;
     background: hsl(0, 0%, 10%);
