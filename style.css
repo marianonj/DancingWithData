@@ -6,19 +6,25 @@
   
   h1 {
     font-family: lato;
-    font-size: 70px;
+    font-size: 3vw;
   }
+  #header_paragraph{
+    margin-top: 5vh;
+  }
+  
+  #header_paragraph_2{
+    margin-top: 1vh;
+  }
+
   section {
     background:hsl(0, 0%, 0%);
-    height: calc(100vh - 10vh);
+    height: calc(150-10vh);
+    padding-top: 10vh;
     color: white;
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  section.body{
-    height: calc(15vh);
   }
   
   #main-nav a {
@@ -94,15 +100,12 @@ body{
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin: 5vh;
 }
 
 .progress_images{
-  width: auto;
-  height: auto;
-}
-
-.progress_videos{}
-
-p{
-  text-mar
+  width: 20vw;
+  height: 20vw;
 }
