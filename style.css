@@ -19,20 +19,21 @@
   section {
     background:hsl(0, 0%, 0%);
     height: calc(150-10vh);
-    padding-top: 10vh;
+    padding-top: 8vh;
     color: white;
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   
   #main-nav a {
     font-family:  'Calibri';
     color: #f6f7f8;
     background: hsl(0, 0%, 10%);
-    height: 60px;
-    font-size: 30px;
+    height: 8vh;
+    font-size: 2.5vw;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -77,9 +78,19 @@
     width: 100%;
   }
  
-
 .invert{
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(347deg) brightness(104%) contrast(101%);
+    max-width: 2.5vw;
+    max-height: 2.5vw;
+    min-width: 2.5vw;
+    min-height: 2.5vw;
+}
+
+.flag{
+  max-width: 2.5vw;
+  max-height: 2.5vw;
+  min-width: 2.5vw;
+  min-height: 2.5vw;
 }
 
 #language_select:hover .invert{
@@ -94,18 +105,31 @@ body{
     background-color: hsl(0, 0%, 0%);
 }
 
+p{
+  font-size: 1.5vw;
+}
+
 .descending_flex_container {
   display: flex;
-  direction: column;
+  direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   padding-left: 5vw;
   padding-right: 5vw;
-  margin: 5vh;
+  margin-top: 5vh;
+  text-align: center;
 }
 
+.descending_flex_container p{
+  justify-content: space-around;
+  align-self: center;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+
 .progress_images{
-  width: 20vw;
-  height: 20vw;
+  width: 25vw;
+  height: 25vw;
 }
