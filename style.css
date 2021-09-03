@@ -18,7 +18,6 @@
 
   section {
     background:hsl(0, 0%, 0%);
-    height: calc(150-10vh);
     padding-top: 8vh;
     color: white;
     flex-direction: column;
@@ -33,7 +32,7 @@
     color: #f6f7f8;
     background: hsl(0, 0%, 10%);
     height: 8vh;
-    font-size: 2.4vh;
+    font-size: 3vh;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -80,17 +79,17 @@
  
 .invert{
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(347deg) brightness(104%) contrast(101%);
-    max-width: 2.5vh;
-    max-height: 2.5vh;
-    min-width: 2.5vh;
-    min-height: 2.5vh;
+    max-width: 3vh;
+    max-height: 3vh;
+    min-width: 3vh;
+    min-height: 3vh;
 }
 
 .flag{
-  max-width: 2.5vh;
-  max-height: 2.5vh;
-  min-width: 2.5vh;
-  min-height: 2.5vh;
+  max-width: 3vh;
+  max-height: 3vh;
+  min-width: 3vh;
+  min-height: 3vh;
 }
 
 #language_select:hover .invert{
