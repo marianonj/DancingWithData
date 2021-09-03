@@ -34,9 +34,14 @@
     text-align: center;
   }
   
-  .divider{
+  .horizontal_div{
     width: .1vw;
     background-color:hsl(0, 0%, 10%);
+  }
+  .vertical_div{
+    height: .1vw;
+    width: 90%;
+    background-color:hsl(0, 0%, 10%)
   }
 
   
@@ -139,6 +144,7 @@ text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  text-overflow: wrap;
 }
 
 .descending_flex_container p{
