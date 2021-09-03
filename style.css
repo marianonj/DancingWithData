@@ -25,13 +25,18 @@
 
   section {
     background:hsl(0, 0%, 0%);
-    padding-top: 8vh;
+    padding-top: 6vh;
     color: white;
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+  
+  .divider{
+    width: .1vw;
+    background-color:hsl(0, 0%, 10%);
   }
 
   
