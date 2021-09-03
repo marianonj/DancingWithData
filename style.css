@@ -33,7 +33,7 @@
     color: #f6f7f8;
     background: hsl(0, 0%, 10%);
     height: 8vh;
-    font-size: 2.4vw;
+    font-size: 2.4vh;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -80,17 +80,17 @@
  
 .invert{
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(347deg) brightness(104%) contrast(101%);
-    max-width: 2.5vw;
-    max-height: 2.5vw;
-    min-width: 2.5vw;
-    min-height: 2.5vw;
+    max-width: 2.5vh;
+    max-height: 2.5vh;
+    min-width: 2.5vh;
+    min-height: 2.5vh;
 }
 
 .flag{
-  max-width: 2.5vw;
-  max-height: 2.5vw;
-  min-width: 2.5vw;
-  min-height: 2.5vw;
+  max-width: 2.5vh;
+  max-height: 2.5vh;
+  min-width: 2.5vh;
+  min-height: 2.5vh;
 }
 
 #language_select:hover .invert{
