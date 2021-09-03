@@ -7,13 +7,17 @@
   h1 {
     font-family: lato;
     font-size: 3vw;
+    text-align: center;
   }
+
   #header_paragraph{
     margin-top: 5vh;
+    text-align: center;
   }
   
   #header_paragraph_2{
     margin-top: 1vh;
+    text-align: center;
   }
 
   section {
@@ -107,6 +111,7 @@ body{
 
 p{
   font-size: 1.5vw;
+  text-align: center;
 }
 
 .horizontal_flex_container{
@@ -119,14 +124,13 @@ margin-top: 5vh;
 padding-left: 5vw;
 padding-right: 5vw;
 text-align: center;
-
 }
 
 .descending_flex_container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .descending_flex_container p{
