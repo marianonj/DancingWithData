@@ -8,16 +8,19 @@
     font-family: lato;
     font-size: 3vw;
     text-align: center;
+    width: 100%;
   }
 
   #header_paragraph{
     margin-top: 5vh;
     text-align: center;
+    width: 100%;
   }
   
   #header_paragraph_2{
     margin-top: 1vh;
     text-align: center;
+    width: 100%;
   }
 
   section {
