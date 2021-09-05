@@ -35,8 +35,9 @@
   }
   
   .horizontal_div{
-    margin-top: 5vh;
-    height: .15vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    height: .2vh;
     width: 100%;
     background-color:hsl(0, 0%, 10%)
   }
@@ -161,6 +162,6 @@ text-align: center;
 
 
 .progress_images{
-  width: 20vw;
-  height: 20vw;
+  width: 25vw;
+  height: 25vw;
 }

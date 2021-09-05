@@ -43,9 +43,9 @@
     <h1>Dance is simply a form of physical movement</h1>
     <h1>The floor measures these movements using cameras and load cells</h1>
     <div class="horizontal_div"></div>
-    <h1 style="padding-top:4vh">Camera Data </h1>
+    <h1>Camera Data</h1>
     <p id="header_paragraph_1"> The bulk of the program tracks the orientation of the foot and its weight placement.</p>
-    <p id="header_paragraph_2"> Every color image can be broken down into 3-channels (more white color = higher numerical value):</p>
+    <p id="header_paragraph_2"> Every color image can be broken down into 3-channels (whiter color = higher numerical value):</p>
     <video class ='progress_images' autoplay loop muted playsinline src="explanation_images/heat_map_normal.mp4" alt="HSV full coloration" type='video/mp4'></video>
     <div class='horizontal_flex_container'>
       <div class='descending_flex_container'>
@@ -63,27 +63,46 @@
     </div>
     <p>By setting upper and lower limits on these values, we can separate the socks from the background.</p>
     <div class="horizontal_div"></div>
-    <h1 style="padding-top: 4vh;">Why the shapes?</h1>
-    <p>Using the upper limits above, the foot's edges are determined using <a style="text-decoration: none; color: rgb(253, 246, 145);" href=https://en.wikipedia.org/wiki/Contour_line target=_blank rel="noreferrer noopener">contour edge detection</a>. </p>
-    <p>But, the foot's edges can vary depending on weight distribution, distance, and overlap.</p>
-    <p>Because both feet have similiar edges, we need a method to differentiate the left from the right.</p>
-
-    <p style="padding-top: 4vh;">HelloHelloHelloHelloHelloHelloHello</p>
+    <h1>Why the shapes?</h1>
+    <p>Using the upper limits above, the feet's shapes are determined using <a style="text-decoration: none; color: rgb(253, 246, 145);" href=https://en.wikipedia.org/wiki/Edge_detection target=_blank rel="noreferrer noopener">contour edge detection</a>. </p>
+    <p>Contour edge detection only responds to changes in shape, and not to rotation and scale </p>
+    <p>Watch how these changes affect the similarity (redder hue = less similar)</p>
 
     <div class='horizontal_flex_container'>
       <div class='descending_flex_container'>
       <video class ='progress_images' autoplay loop muted playsinline src="explanation_images/rotate_compare.mp4" alt="Progress_1" type='video/mp4'></video>
-        <p>Rotational compare</p>
+        <p>Rotationally Invariant</p>
       </div>
       <div class='descending_flex_container'>
         <video class ='progress_images' autoplay loop muted playsinline src="explanation_images/shape_compare.mp4" alt="Progress_1" type='video/mp4'></video>
-        <p>Shape comparison</p>
+        <p>Shape Variant</p>
       </div>
       <div class='descending_flex_container'>
         <video class ='progress_images' autoplay loop muted playsinline src="explanation_images/scale_compare.mp4" alt="Progress_1" type='video/mp4'></video>
-        <p>Scale comparison</p>
+        <p>Scale Invariant</p>
       </div>
+    </div>
+    <p>The feet's edges are deformed by weight distribution, distance from the camera, and obstruction of view.</p>
+    <p>These deforimities allow us to define specific states of the feet (e.g. weight on the heel)</p>
+    <p>But the edges of the left and right foot are very similiar, so distinict shapes allow us</p>
+    <p>to better differentiate between the left and the right foot</p>
+    <div class="horizontal_div"></div>
+    <h1>Load cells</h1>
+    <p><a style="text-decoration: none; color: rgb(253, 246, 145);" href=https://en.wikipedia.org/wiki/Load_cell target=_blank rel="noreferrer noopener">Load cells</a>
+    are small transducers that measure force</p>
+    <p>Using the contour edge data above, we can determine the location, orientation, and state of the contour.<p>
+    <p>But we can't determine the degree of force being distributed by the foot</p>
+    <p>By triangulating the load cells' read values, we can approximate the location of the net force </p>
+    <p>If that net force is closer to one foot, that foot is transmitting a larger portion.</p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <img class ='progress_images' src='explanation_images/load_cell.png' alt="Progress_3">
+    
+    <img></img>
   </section>
+
    
    
    
