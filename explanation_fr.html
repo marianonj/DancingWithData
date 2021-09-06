@@ -38,7 +38,63 @@
     </ul>
   </nav>
   <section>
-    <h1>Hi, welcome</h1>
+    <h1>La danse n’est que des mouvementés physiques </h1>
+    <h1>Le sol de danse mesure ces mouvementés en utilisant des caméras et des capteurs de force.</h1>
+    <div class="horizontal_div"></div>
+    <h1>Las données de caméras </h1>
+    <p id="header_paragraph_1"> La rôle principale du programme est suivre l’orientation des pieds et leur distribution de poids</p>
+    <p id="header_paragraph_2"> On peut diviser toutes les images en trois partes colorimétriques (plus blanche = valeur plus grand):</p>
+    <video class ='progress_images' autoplay loop muted playsinline src="explanation_images/heat_map_normal.mp4" alt="HSV full coloration" type='video/mp4'></video>
+    <div class='horizontal_flex_container'>
+      <div class='descending_flex_container'>
+        <video class ='progress_images' autoplay loop muted playsinline src="explanation_images/heat_map_h.mp4" alt="HSV full coloration" type='video/mp4'></video>
+        <p>La teinte</p>
+      </div>
+      <div class='descending_flex_container'>
+        <video class ='progress_images' autoplay loop muted playsinline src="explanation_images/heat_map_s.mp4" alt="HSV full coloration" type='video/mp4'></video>
+        <p>La saturation</p>
+      </div>
+      <div class='descending_flex_container'>
+        <video class ='progress_images' autoplay loop muted playsinline src="explanation_images/heat_map_v.mp4" alt="HSV full coloration" type='video/mp4'></video>
+        <p>La valeur</p>
+      </div>
+    </div>
+    <p>Avec des limites supérieurs et inferieurs des valeurs, on peut distinguer las chaussettes de l’image de fond.</p>
+    <div class="horizontal_div"></div>
+    <h1>Pourquoi existent las formes sur le dessous de las chaussettes?</h1>
+    <p>En utilisant las limites susmentionnées, on établit las formes des pieds utilisent un <a style="text-decoration: none; color: rgb(253, 246, 145);" href=https://fr.wikipedia.org/wiki/D%C3%A9tection_de_contours target=_blank rel="noreferrer noopener">détecteur de contours.</a>. </p>
+    <p>On peut classer les contours (et las formes qui représentent) avec des moments d’image.  </p>
+    <p>Ces moments répondent seulement aux modifications de la forme, mais pas aux modifications d’orientation ni d’échelle. </p>
+    <p>Observez comment lesdites modifications changent la similarité (plus rogue = moins pareille)</p>
+    <div class='horizontal_flex_container'>
+      <div class='descending_flex_container'>
+      <video class ='progress_images' autoplay loop muted playsinline src="explanation_images/rotate_compare.mp4" alt="Progress_1" type='video/mp4'></video>
+        <p>La invariabilité de rotation</p>
+      </div>
+      <div class='descending_flex_container'>
+        <video class ='progress_images' autoplay loop muted playsinline src="explanation_images/shape_compare.mp4" alt="Progress_1" type='video/mp4'></video>
+        <p>La variabilité de forme </p>
+      </div>
+      <div class='descending_flex_container'>
+        <video class ='progress_images' autoplay loop muted playsinline src="explanation_images/scale_compare.mp4" alt="Progress_1" type='video/mp4'></video>
+        <p>La invariabilité d’échelle </p>
+      </div>
+    </div>
+    <p>La distance de la caméra, la distribution du poids, et l’obstruction visuelle déforment les conteurs des pies.</p>
+    <p>Ces déformations on permet classifier les états des pies (p.ex. les poids distribués sous le talon)</p>
+    <p>Mais, les contours gauches et droits sont très pareils l’un à l’autre.</p>
+    <p>tLas formes distinctes sur les dessous on permet distinguer le pied droit du gauche.</p>
+    <div class="horizontal_div"></div>
+    <h1>Les capteurs de force </h1>
+    <p><a style="text-decoration: none; color: rgb(253, 246, 145);" href=https://en.wikipedia.org/wiki/Load_cell target=_blank rel="noreferrer noopener">Les capteurs de force</a>
+    are small transducers that measure force</p>
+    <p>Les contours des pieds on permettent déterminer la localisation, l’orientation, et l’état des pieds.<p>
+    <p>Mais on ne peut déterminer la force transmis par chaque pied.</p>
+    <p>Les capteurs de force sont des traducteurs qui transmettent électricité a la mesure de la force appliquée.</p>
+    <p>Utilisant leur emplacement et conductivité électrique, on peut trianguler l’emplacement de la force nette.</p>|
+    <p>Si un pied est plus proche à la force nette que l’autre, il transmet une portion plus grande de la force. </p>
+    <img class ='progress_images' src='explanation_images/load_cell.png' alt="Progress_3">
+    <img></img>
   </section>
 </body>
 
